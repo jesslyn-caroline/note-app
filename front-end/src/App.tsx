@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import Layout from "./pages/Layout.tsx";
 import Home from "./pages/Home.tsx";
@@ -8,7 +8,7 @@ import Archive from "./pages/Archive.tsx";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />}/>
@@ -17,7 +17,7 @@ function App() {
           <Route path="archive" element={<Archive />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </Router>
   )
 }
 
