@@ -30,7 +30,7 @@ function Layout() {
                     </div>
                 </div>        
             </nav>
-            <div className={`w-full h-full`}>
+            <div className={`w-full h-full p-7`}>
                 <Outlet />
             </div>
         </div>
